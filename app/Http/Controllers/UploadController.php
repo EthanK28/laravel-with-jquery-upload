@@ -71,3 +71,6 @@ class UploadController extends Controller
         return str_replace('/public/', '/', URL::asset($this->path) . '/');
     }
 }
+
+
+

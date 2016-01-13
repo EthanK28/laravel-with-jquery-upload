@@ -19,3 +19,22 @@
         <div id="addjunk"></div>
     </div>
 </div>
+
+<script>
+    $(function () {
+        'use strict';
+        var jupload = $('#fileupload');
+        // Initialize the jQuery File Upload widget:
+        jupload.fileupload({
+            // Uncomment the following to send cross-domain cookies:
+            //xhrFields: {withCredentials: true},
+            url: '/upload/store'
+        });
+
+        // from http://stackoverflow.com/a/21728472
+        if (typeof existingfiles !== 'undefined'){
+            jupload.fileupload('option', 'done').call(jupload, $.Event('done'), {result: existingfiles});
+        };
+
+    });
+</script>

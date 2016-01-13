@@ -41,6 +41,10 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->singleton(
+  App\Library\UploadHandler::class
+);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

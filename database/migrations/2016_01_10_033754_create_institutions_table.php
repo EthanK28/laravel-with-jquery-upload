@@ -13,7 +13,7 @@ class CreateInstitutionsTable extends Migration
     public function up()
     {
         Schema::create('institutions', function (Blueprint $table) {
-             $table->increments('id')->unique();
+            $table->increments('id')->unique();
             $table->string('title');
             $table->text('body');
             $table->string('topcolor');

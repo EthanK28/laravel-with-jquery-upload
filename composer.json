@@ -7,7 +7,9 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "anahkiasen/former": "4.0.*@dev"
+        "anahkiasen/former": "4.0.*@dev",
+        "laravelcollective/html": "5.2.*",
+        "intervention/image": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
